@@ -1,0 +1,36 @@
+#
+# There is insufficient memory for the Java Runtime Environment to continue.
+# Native memory allocation (malloc) failed to allocate 32744 bytes for ChunkPool::allocate
+# Possible reasons:
+#   The system is out of physical RAM or swap space
+#   The process is running with CompressedOops enabled, and the Java Heap may be blocking the growth of the native heap
+# Possible solutions:
+#   Reduce memory load on the system
+#   Increase physical memory or swap space
+#   Check if swap backing store is full
+#   Decrease Java heap size (-Xmx/-Xms)
+#   Decrease number of Java threads
+#   Decrease Java thread stack sizes (-Xss)
+#   Set larger code cache with -XX:ReservedCodeCacheSize=
+#
+#  
+#
+# 
+-Xmx64m -Xms64m -Dorg.gradle.appname=gradlew org.gradle.wrapper.GradleWrapperMain tasks
+
+Host: AMD Ryzen 5 3550H with Radeon Vega Mobile Gfx  , 8 cores, 5G,  Windows 11 , 64 bit Build 22621 (10.0.22621.2361)
+Time: Fri Sep 29 10:24:53 2023 India Standard Time elapsed time: 253.141481 seconds (0d 0h 4m 13s)
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x0000022332c96800):  JavaThread "C2 CompilerThread0" daemon [_thread_in_native, id=25696, stack(0x00000024d2e00000,0x00000024d2f00000)]
+
+
+Current CompileTask:
+C2: 253142 1573       4       java.util.LinkedHashMap$LinkedHashIterator::nextNode (54 bytes)
+
+Stack: [0x00000024d2e00000,0x00000024d2f00000]
+
+[error occurred during error reporting (printing native stack), id 0xc00000fd, EXCEPTION_STACK_OVERFLOW (0xc00000fd) at pc=0x00007ff9c17e42ff]
+
+
