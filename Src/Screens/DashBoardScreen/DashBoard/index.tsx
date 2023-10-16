@@ -1,7 +1,7 @@
 import { View, Text, Button } from 'react-native'
 import React, { useContext, useState } from 'react'
 import AsyncStorage from '@react-native-async-storage/async-storage';
-import { signUpDetailContext } from '../../../ContextApi/SignUpContextApi';
+import { signUpDetailContext } from '../../../context-api/sign-up-context-api';
 import { removeToken } from '../../../Uitils/uitility';
 
 const DashBoard = () => {

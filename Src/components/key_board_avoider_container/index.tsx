@@ -1,12 +1,12 @@
 import { KeyboardAvoidingView, ScrollView } from 'react-native'
-import { height } from '../Constants/screenHeightAndWidth'
+import { styles } from './style'
 type KeyboardAvoiderContainerProps = {
     children: React.ReactNode
 }
 const KeyboardAvoiderContainer = ({children} : KeyboardAvoiderContainerProps ) => {
     return (
-        <KeyboardAvoidingView style={{flex:1, height:height , paddingTop:25}} behavior='height'>
-            <ScrollView style={{flex:1, height: height }}>{children }
+        <KeyboardAvoidingView style={styles.mainComponent} behavior='height'>
+            <ScrollView style={styles.scrollView}>{children }
             </ScrollView>
         </KeyboardAvoidingView>
     )

@@ -1,5 +1,5 @@
 import { StyleSheet } from "react-native";
-import { width,height } from "../../Constants/screenHeightAndWidth";
+import { width,height } from "../../constants/screenHeightAndWidth";
 export const styles = StyleSheet.create({
     mainContainer:{
         width:'100%',

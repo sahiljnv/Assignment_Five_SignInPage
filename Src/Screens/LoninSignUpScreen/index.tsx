@@ -1,10 +1,10 @@
 import {View, Image} from 'react-native'
 import React from 'react'
-import ButtonComponent from '../../Components/ButtonComponent'
-import BackgroundImageContainer from '../../Components/BackgroundImageContainer'
+import ButtonComponent from '../../components/button_component'
+import BackgroundImageContainer from '../../components/background_image_container'
 import type { NativeStackScreenProps } from '@react-navigation/native-stack';
 import { styles } from './style'
-import { SignUpStackParamList } from '../../NavigationComponents/OnboardingScreens';
+import { SignUpStackParamList } from '../../navigation-components/onboarding-screens';
 type LogInSignUpProps = NativeStackScreenProps<SignUpStackParamList,'LogInSingUpScreen'>
 
 

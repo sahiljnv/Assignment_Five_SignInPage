@@ -1,17 +1,17 @@
 import { Text, View, TextInput, Pressable } from 'react-native'
 import React, { useContext, useState } from 'react'
-import BackgroundImageContainer from '../../Components/BackgroundImageContainer'
+import BackgroundImageContainer from '../../components/background_image_container'
 import FacebookIcon from 'react-native-vector-icons/Entypo';
 import GoogleIcon from 'react-native-vector-icons/AntDesign';
 import AppleIcon from 'react-native-vector-icons/AntDesign';
-import ScreenButtonComponent from '../../Components/ScreenButtonComponent';
+import ScreenButtonComponent from '../../components/screen_button_component';
 import type { NativeStackScreenProps } from '@react-navigation/native-stack';
 import { styles } from './style';
-import KeyboardAvoiderContainer from '../../Components/KeyboardAvoiderContainer';
-import { signUpDetailContext } from '../../ContextApi/SignUpContextApi';
+import KeyboardAvoiderContainer from '../../components/key_board_avoider_container';
+import { signUpDetailContext } from '../../context-api/sign-up-context-api';
 import { storeTokenId } from '../../Uitils/uitility';
-import { SignUpStackParamList } from '../../NavigationComponents/OnboardingScreens';
-import { logInPostApi } from '../../Api/sign_up_api';
+import { SignUpStackParamList } from '../../navigation-components/onboarding-screens';
+import { logInPostApi } from '../../api/sign_up_api';
 export type Root={
     data: Data
   }

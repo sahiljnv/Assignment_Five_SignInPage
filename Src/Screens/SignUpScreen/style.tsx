@@ -1,6 +1,6 @@
 import { StyleSheet } from "react-native";
-import { width, height } from "../../Constants/screenHeightAndWidth";
-import { color } from "../../Constants/Colors";
+import { width, height } from "../../constants/screenHeightAndWidth";
+import { color } from "../../constants/Colors";
 
 export const styles = StyleSheet.create({
     mainContainer: {

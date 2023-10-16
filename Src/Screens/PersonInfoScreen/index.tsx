@@ -1,16 +1,16 @@
 import { Alert, Modal, Pressable, Text, TextInput, View } from 'react-native'
 import React, { useContext, useState } from 'react'
-import { SignUpStackParamList } from '../../NavigationComponents/Navigation'
+import { SignUpStackParamList } from '../../navigation-components/navigation'
 import type { NativeStackScreenProps } from '@react-navigation/native-stack';
-import { signUpDetailContext } from '../../ContextApi/SignUpContextApi';
-import BackgroundImageContainer from '../../Components/BackgroundImageContainer';
+import { signUpDetailContext } from '../../context-api/sign-up-context-api';
+import BackgroundImageContainer from '../../components/background_image_container';
 import { styles } from './style'
-import ScreenButtonComponent from '../../Components/ScreenButtonComponent';
-import KeyboardAvoiderContainer from '../../Components/KeyboardAvoiderContainer';
+import ScreenButtonComponent from '../../components/screen_button_component';
+import KeyboardAvoiderContainer from '../../components/key_board_avoider_container';
 import Arrow from 'react-native-vector-icons/AntDesign';
 import Cross from 'react-native-vector-icons/Entypo';
 import CalendarIcon from 'react-native-vector-icons/Feather';
-import { gender } from '../../Constants/Gender';
+import { gender } from '../../constants/Gender';
 import { Calendar } from 'react-native-calendars';
 
 

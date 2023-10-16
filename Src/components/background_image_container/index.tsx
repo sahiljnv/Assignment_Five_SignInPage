@@ -1,5 +1,6 @@
-import { StyleSheet,ImageBackground} from 'react-native'
+import {ImageBackground} from 'react-native'
 import React from 'react'
+import { styles } from './style'
 
 const BackgroundImageContainer = ({children}:{children : React.ReactNode}) => {
   return (
@@ -11,8 +12,3 @@ const BackgroundImageContainer = ({children}:{children : React.ReactNode}) => {
 
 export default BackgroundImageContainer
 
-const styles = StyleSheet.create({
-    mainContainer: {
-        height:'100%'
-      }
-})

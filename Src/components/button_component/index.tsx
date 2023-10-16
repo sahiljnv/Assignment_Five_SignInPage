@@ -1,5 +1,6 @@
-import { View, Text, Pressable, StyleSheet, GestureResponderEvent } from 'react-native'
-import React, { CSSProperties } from 'react'
+import { View, Text, Pressable, GestureResponderEvent } from 'react-native'
+import React from 'react'
+import { styles } from './style'
 type ButtonCompProps = {
     children: string,
     color: string,
@@ -23,21 +24,3 @@ const ButtonComponent = ({ children, color, backgroundColor,borderWidth, borderC
 
 export default ButtonComponent
 
-const styles = StyleSheet.create({
-    buttonInnerContainer: {
-        alignItems: 'center',
-        width: 150,
-        height: 50,
-        borderRadius: 25,
-        justifyContent: 'center',
-        marginHorizontal:5
-    },
-    buttonText: {
-        color: 'white',
-        fontSize: 15,
-        fontFamily: 'SpaceGrotesk-Medium'
-    },
-    button: {
-        opacity: 0.5
-    }
-})

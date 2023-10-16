@@ -1,16 +1,16 @@
 import { Text, View, TextInput, Alert } from 'react-native'
 import React, { useContext } from 'react'
-import BackgroundImageContainer from '../../Components/BackgroundImageContainer'
+import BackgroundImageContainer from '../../components/background_image_container'
 import FacebookIcon from 'react-native-vector-icons/Entypo';
 import GoogleIcon from 'react-native-vector-icons/AntDesign';
 import AppleIcon from 'react-native-vector-icons/AntDesign';
-import ScreenButtonComponent from '../../Components/ScreenButtonComponent';
-import { signUpDetailContext } from '../../ContextApi/SignUpContextApi';
+import ScreenButtonComponent from '../../components/screen_button_component';
+import { signUpDetailContext } from '../../context-api/sign-up-context-api';
 import type { NativeStackScreenProps } from '@react-navigation/native-stack';
 import { styles } from './style';
-import KeyboardAvoiderContainer from '../../Components/KeyboardAvoiderContainer';
+import KeyboardAvoiderContainer from '../../components/key_board_avoider_container';
 import { checkEmailAndPassword, isSubstring } from '../../Uitils/uitility';
-import { SignUpStackParamList } from '../../NavigationComponents/OnboardingScreens';
+import { SignUpStackParamList } from '../../navigation-components/onboarding-screens';
 
 type SignUpProps = NativeStackScreenProps<SignUpStackParamList, 'SignUpScreen'>
 

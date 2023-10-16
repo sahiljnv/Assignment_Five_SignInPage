@@ -2,13 +2,13 @@ import { Alert, Pressable, Text, View } from 'react-native'
 import React, { useContext, useState } from 'react'
 import { NativeStackScreenProps } from '@react-navigation/native-stack'
 import { styles } from './style'
-import BackgroundImageContainer from '../../Components/BackgroundImageContainer'
+import BackgroundImageContainer from '../../components/background_image_container'
 import BackIcon from 'react-native-vector-icons/MaterialIcons';
-import ChoseItemContainer from '../../Components/ChoseItemContainer'
-import ScreenButtonComponent from '../../Components/ScreenButtonComponent'
-import { signUpDetailContext } from '../../ContextApi/SignUpContextApi'
-import { SignUpStackParamList } from '../../NavigationComponents/OnboardingScreens'
-import { postSignUpApi } from '../../Api/sign_up_api'
+import ChoseItemContainer from '../../components/chose_item_container/ChoseItemContainer'
+import ScreenButtonComponent from '../../components/screen_button_component'
+import { signUpDetailContext } from '../../context-api/sign-up-context-api'
+import { SignUpStackParamList } from '../../navigation-components/onboarding-screens'
+import { postSignUpApi } from '../../api/sign_up_api'
 
 type StartWorkoutScreenProps = NativeStackScreenProps<SignUpStackParamList, 'StartWorkoutScreen'>
 

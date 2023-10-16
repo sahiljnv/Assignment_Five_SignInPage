@@ -1,19 +1,5 @@
 import axios from './BaseApi';
-type onboardingDataProps = {
-    name: string,
-    email: string,
-    password: string,
-    measurementSystem:string ,
-    height: string,
-    age: string,
-    gender: string,
-    weight: string,
-    trainingGoal: string,
-    workoutFrequency: string,
-    workoutFrequencyType: string,
-    workoutDuration: string,
-    referralCode: string
-  }
+import { onboardingDataProps } from './type';
 export const logInPostApi= async (email:string, password:string) => {
     try {
          const response =  (await axios.post('/api/v4/login', {
@@ -39,26 +25,10 @@ export const postSignUpApi = async (onboardingData:onboardingDataProps )=>{
       console.log(onboardingData);
        
       try{
-        const response = (await axios.post('/api/v4/signup',onboardingData)).data
-        // .then(({data}) =>{
-        //   if(data.status === "success"){
-        //       Alert.alert('Successfully Saved','Your Data is saved ',[
-        //         {
-        //           text:'Ok',
-        //           style:'cancel',
-        //           onPress:()=>setCheckOnboarding(true)
-        //         }
-        //       ])
-        //   }
-
-        return response
-        
-        // }
-         
-        //   );
+        const response = await axios.post('/api/v4/signup',onboardingData)
+        return response.data
       }catch(error){
         console.log(error);
-        
       }
     
     }

@@ -2,7 +2,7 @@ import {StatusBar } from 'react-native'
 import React from 'react'
 import JustTrainTab from '../Screens/DashBoardScreen/BottomTab/JustTrainTab';
 import ActivityTab from '../Screens/DashBoardScreen/BottomTab/ActivityTab';
-import DashBoardScreens from './DashBoardScreens';
+import DashBoardScreens from './dash-board-screens';
 import { createMaterialBottomTabNavigator } from '@react-navigation/material-bottom-tabs';
 import WalkIcon from 'react-native-vector-icons/FontAwesome5';
 import StopWatchIcon from 'react-native-vector-icons/Fontisto';
